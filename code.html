@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { "colors": { "on-tertiary-fixed": "#1b1b20", "secondary-fixed": "#bef37b", "tertiary": "#ffffff", "on-secondary-container": "#c3f980", "on-primary-container": "#457000", "inverse-primary": "#416900", "inverse-surface": "#e5e1e4", "on-tertiary-container": "#65646a", "surface": "#131315", "surface-tint": "#95da38", "tertiary-container": "#e4e1e8", "on-error": "#690005", "on-secondary-fixed": "#102000", "surface-variant": "#353437", "secondary-fixed-dim": "#a2d662", "surface-container": "#201f21", "on-tertiary-fixed-variant": "#47464c", "surface-container-lowest": "#0e0e10", "primary-fixed": "#b0f753", "secondary-container": "#487401", "outline-variant": "#424937", "inverse-on-surface": "#313032", "surface-container-low": "#1c1b1d", "secondary": "#a2d662", "on-secondary-fixed-variant": "#2f4f00", "surface-bright": "#39393b", "on-primary": "#1f3700", "primary-fixed-dim": "#95da38", "tertiary-fixed-dim": "#c8c5cc", "surface-container-highest": "#353437", "surface-container-high": "#2a2a2c", "on-primary-fixed-variant": "#304f00", "on-primary-fixed": "#102000", "on-surface": "#e5e1e4", "on-background": "#e5e1e4", "error": "#ffb4ab", "on-error-container": "#ffdad6", "primary-container": "#b0f753", "background": "#131315", "on-secondary": "#1f3700", "on-surface-variant": "#c2cab1", "outline": "#8c947d", "primary": "#ffffff", "tertiary-fixed": "#e4e1e8", "on-tertiary": "#303035", "surface-dim": "#131315", "error-container": "#93000a" }, "borderRadius": { "DEFAULT": "0.125rem", "lg": "0.25rem", "xl": "0.5rem", "full": "0.75rem" }, "spacing": { "margin": "1.25rem", "space-xl": "5rem", "margin-desktop": "5rem", "space-lg": "2.5rem", "space-md": "1.25rem", "gutter": "1.5rem", "margin-tablet": "2.5rem", "gutter-desktop": "2.5rem", "space-xs": "0.375rem", "space-sm": "0.75rem" }, "fontFamily": { "headline-xl-mobile": [ "Space Grotesk" ], "label-sm": [ "Space Grotesk" ], "body-md": [ "Inter" ], "display-lg-mobile": [ "Space Grotesk" ], "body-xl": [ "Inter" ], "display-xl-mobile": [ "Space Grotesk" ], "display-lg": [ "Space Grotesk" ], "headline-lg": [ "Space Grotesk" ], "display-xl": [ "Space Grotesk" ], "headline-xl": [ "Space Grotesk" ], "headline-md": [ "Space Grotesk" ], "body-lg": [ "Inter" ], "label-md": [ "Space Grotesk" ] }, "fontSize": { "headline-xl-mobile": [ "32px", { "lineHeight": "38px", "letterSpacing": "-0.02em", "fontWeight": "600" } ], "label-sm": [ "11px", { "lineHeight": "14px", "letterSpacing": "0.08em", "fontWeight": "600" } ], "body-md": [ "14px", { "lineHeight": "22px", "letterSpacing": "0em", "fontWeight": "400" } ], "display-lg-mobile": [ "42px", { "lineHeight": "46px", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "body-xl": [ "20px", { "lineHeight": "32px", "letterSpacing": "-0.01em", "fontWeight": "400" } ], "display-xl-mobile": [ "56px", { "lineHeight": "60px", "letterSpacing": "-0.03em", "fontWeight": "700" } ], "display-lg": [ "80px", { "lineHeight": "84px", "letterSpacing": "-0.035em", "fontWeight": "600" } ], "headline-lg": [ "32px", { "lineHeight": "40px", "letterSpacing": "-0.02em", "fontWeight": "500" } ], "display-xl": [ "112px", { "lineHeight": "104px", "letterSpacing": "-0.04em", "fontWeight": "700" } ], "headline-xl": [ "48px", { "lineHeight": "54px", "letterSpacing": "-0.025em", "fontWeight": "600" } ], "headline-md": [ "24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "500" } ], "body-lg": [ "16px", { "lineHeight": "26px", "letterSpacing": "-0.005em", "fontWeight": "400" } ], "label-md": [ "13px", { "lineHeight": "18px", "letterSpacing": "0.04em", "fontWeight": "500" } ] } } } };</script></head><body class="bg-background font-body-md text-on-surface antialiased selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 inset-x-0 z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]"><div class="h-20 max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop flex items-center justify-between gap-gutter"><div class="flex items-center gap-space-sm"><a class="flex items-center gap-space-xs group" data-path="home" href="#"><span class="font-headline-md text-headline-md tracking-tight text-primary group-hover:text-primary-container transition-colors">PD<span class="text-primary-container group-hover:text-primary transition-colors">.</span></span></a><div class="hidden sm:flex items-center gap-2 px-2.5 py-1 rounded-full bg-surface-container-high/60"><span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Available</span></div></div><nav class="hidden lg:flex items-center gap-1 p-1 rounded-full bg-surface-container/70 backdrop-blur-md" data-active-classes="bg-primary-container text-on-primary-container rounded-lg"><a aria-current="page" class="px-4 py-2 font-label-md uppercase tracking-wider transition-colors bg-primary-container text-on-primary-container rounded-lg" data-path="home" href="#home">Home</a><a class="px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="about" href="#about">About</a><a class="px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="services" href="#services">Services</a><a class="px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="work" href="#work">Work</a><a class="px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="skills" href="#skills">Skills</a><a class="px-4 py-2 font-label-md text-label-md uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors rounded-lg" data-path="contact" href="#contact">Contact</a></nav><div class="flex items-center gap-3"><button aria-label="Toggle dark or light theme" class="w-10 h-10 rounded-full flex items-center justify-center bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-colors" type="button"><span class="material-symbols-outlined text-[20px]">dark_mode</span></button><a class="hidden sm:inline-flex items-center justify-center h-10 px-space-md rounded-lg bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider hover:bg-secondary-fixed transition-all hover:-translate-y-0.5" href="#contact">Let's Talk</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full text-on-surface">
+<!-- Subtle Ambient Glow -->
+<div class="relative w-full overflow-hidden">
+<div class="pointer-events-none absolute -top-40 right-1/4 w-96 h-96 bg-primary-container/5 rounded-full blur-3xl"></div>
+<div class="pointer-events-none absolute top-1/2 -left-32 w-80 h-80 bg-secondary/5 rounded-full blur-3xl"></div>
+<!-- ======================================================== -->
+<!-- 00. HERO SECTION                                         -->
+<!-- ======================================================== -->
+<section class="relative max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop pt-8 pb-16 lg:pb-24" id="home">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left: Refined Headline & Bio -->
+<div class="lg:col-span-7 flex flex-col items-start">
+<!-- Availability Pill -->
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-surface-container-high/80 mb-6 shadow-sm">
+<span class="w-2 h-2 rounded-full bg-primary-container animate-pulse"></span>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant font-mono">AVAILABLE FOR FREELANCE PROJECTS</span>
+</div>
+<!-- Hero Headline (Carefully constrained: 36-38px) -->
+<h1 class="text-[32px] sm:text-[36px] lg:text-[38px] leading-[1.18] tracking-[-0.02em] font-headline-md font-semibold text-primary mb-5">
+            Designing Digital Experiences.<br/>
+<span class="text-primary-container italic font-normal">Building What’s Next.</span>
+</h1>
+<!-- Body Description (15px refined text) -->
+<p class="font-body-md text-[15px] leading-relaxed text-on-surface-variant max-w-xl mb-8">
+            I design and build modern, responsive websites that combine thoughtful design, seamless interactions, and purposeful functionality.
+          </p>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-4">
+<a class="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md uppercase tracking-wider font-semibold shadow-md hover:bg-secondary-fixed transition-all hover:-translate-y-0.5" href="#work">
+<span>Explore My Work</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+<a class="inline-flex items-center gap-2 h-11 px-6 rounded-full bg-surface-container-high text-on-surface font-label-md text-label-md uppercase tracking-wider hover:bg-surface-variant transition-all hover:-translate-y-0.5 shadow-sm" href="#contact">
+<span class="material-symbols-outlined text-[16px]">download</span>
+<span>Download Resume</span>
+</a>
+</div>
+<!-- Quick Proof Points / Metrics -->
+<div class="grid grid-cols-3 gap-6 pt-10 mt-10 w-full max-w-md bg-surface-container/30 p-4 rounded-xl">
+<div>
+<span class="block text-[22px] font-semibold text-primary font-headline-md">5+</span>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Years Craft</span>
+</div>
+<div>
+<span class="block text-[22px] font-semibold text-primary font-headline-md">40+</span>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Completed Sites</span>
+</div>
+<div>
+<span class="block text-[22px] font-semibold text-primary-container font-headline-md">100%</span>
+<span class="block font-label-sm text-label-sm uppercase text-on-surface-variant tracking-wider">Client Smiles</span>
+</div>
+</div>
+</div>
+<!-- Right: Layered Realistic Browser & Responsive Mockup -->
+<div class="lg:col-span-5 relative mt-8 lg:mt-0">
+<div class="relative w-full max-w-[540px] mx-auto">
+<!-- Browser Mockup Window -->
+<div class="rounded-xl overflow-hidden bg-surface-container-high shadow-2xl">
+<!-- Window Chrome Topbar -->
+<div class="h-9 px-4 bg-surface-container-highest flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<div class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]/80"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]/80"></div>
+<div class="w-2.5 h-2.5 rounded-full bg-[#27c93f]/80"></div>
+</div>
+<div class="px-4 py-1 rounded bg-surface-container text-[11px] font-mono text-on-surface-variant truncate max-w-[210px]">
+                  prosenjitdas.design/v3
+                </div>
+<span class="material-symbols-outlined text-[14px] text-on-surface-variant">refresh</span>
+</div>
+<!-- Browser Canvas Preview -->
+<div class="p-5 bg-surface-container-low flex flex-col gap-4">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-2">
+<span class="w-3 h-3 rounded-sm bg-primary-container"></span>
+<span class="text-[12px] font-headline-md font-semibold text-primary">STUDIO ARCHIVE</span>
+</div>
+<span class="text-[10px] font-mono uppercase px-2 py-0.5 rounded bg-surface-container-high text-primary-container">DESIGN + DEV</span>
+</div>
+<!-- Inner Visual Graphic -->
+<div class="relative h-48 w-full rounded-lg overflow-hidden bg-surface-container shadow-inner">
+<img class="w-full h-full object-cover" data-alt="High contrast editorial dark website viewport mockup showcasing modern grid design, minimal typography layout, lime accents, sleek monochromatic photography presentation and UI cards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3uaAF5Q1S9z4K-ViedHNLFnrUw7RmrvOQy5NMfwRpaWDAFVEuz_5Qh4oRgM1O0ZWREgBJJvsoPbWvyJpgTnEHlHrwLC3-Je7IpfNKw3mS4wRW-EqO_A6yP6FIxdLBiU8unr-hn4sSi8_XPGHtTGNAwPKn2pDBTBAGQsnwqA5iZkFyFdVDy0g2I9kD1VkpPmq8LFXfbfchXBSzdEl5zz2VRdx6uN9ueSlTy2VXvqE"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-transparent flex items-end p-3">
+<span class="text-[11px] font-mono text-primary">Responsive Precision • 60 FPS Transitions</span>
+</div>
+</div>
+<!-- Secondary Content Rows -->
+<div class="grid grid-cols-2 gap-2">
+<div class="p-2.5 rounded bg-surface-container-high/60 flex flex-col gap-1">
+<span class="text-[10px] uppercase font-mono text-on-surface-variant">Accessibility</span>
+<span class="text-[12px] font-medium text-primary">WCAG 2.1 AAA</span>
+</div>
+<div class="p-2.5 rounded bg-surface-container-high/60 flex flex-col gap-1">
+<span class="text-[10px] uppercase font-mono text-on-surface-variant">Lighthouse</span>
+<span class="text-[12px] font-medium text-primary-container">99 Performance</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Overlapping Mobile Viewport Frame -->
+<div class="absolute -bottom-6 -right-4 w-44 rounded-xl overflow-hidden bg-surface-container-highest shadow-2xl p-1.5 hidden sm:block">
+<div class="rounded-lg bg-surface-container-low p-3 flex flex-col gap-2">
+<div class="w-12 h-1 rounded-full bg-surface-variant mx-auto mb-1"></div>
+<div class="h-20 rounded bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="Compact smartphone mobile website UI preview showcasing responsive editorial layout, clean navigation menu and dark sleek styling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuALI0EBOQ8tJddFO5dL0j69ZMtkk0GJh5OJSA5TJU6hKuK2wjm4hJQzX6k-bkpSM2HBdHLQ60ZWonmKLnyY6DnWs4DrLNtQCRfLdtmVo7nhUBqT7_tjNnaa0aUFRF1mp40_wq3LFQQhLV0MOlWvFMizAHxuGHhzQTzcsJstMNm462bdWadFwKrrEmu35MFjEb4_NbQDoFgA457oHqFc92EaeaEG-M2OQSscKtkapbk"/>
+</div>
+<div class="flex items-center justify-between text-[10px] text-on-surface-variant">
+<span>Mobile Flow</span>
+<span class="text-primary-container font-mono">100%</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Hero Footer Metadata Ribbon -->
+<div class="mt-14 pt-6 flex flex-wrap items-center justify-between gap-4 text-on-surface-variant bg-surface-container-lowest/40 px-6 py-4 rounded-xl">
+<div class="flex items-center gap-6 text-[12px] font-mono">
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary-container">location_on</span>
+            Based in India
+          </span>
+<span class="hidden sm:inline">•</span>
+<span class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-[15px] text-primary-container">bolt</span>
+            Open for Select Q2 Projects
+          </span>
+</div>
+<a class="flex items-center gap-2 text-[12px] font-mono text-primary hover:text-primary-container transition-colors group" href="#work">
+<span>Scroll to explore</span>
+<span class="material-symbols-outlined text-[16px] animate-bounce group-hover:text-primary-container">south</span>
+</a>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- 01. SELECTED WORK                                        -->
+<!-- ======================================================== -->
+<section class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-16 lg:py-20" id="work">
+<!-- Section Header -->
+<div class="flex flex-col gap-2 mb-12">
+<div class="text-[12px] text-primary-container font-mono tracking-widest uppercase">
+          01 / SELECTED WORK
+        </div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<h2 class="text-[28px] sm:text-[32px] font-headline-md font-bold tracking-tight text-primary">
+            Selected work. Made with purpose.
+          </h2>
+<p class="font-body-md text-[15px] text-on-surface-variant max-w-md">
+            A selection of digital experiences focused on visual clarity, thoughtful interactions, and meaningful results.
+          </p>
+</div>
+</div>
+<!-- Project Showcase Cards (2x2 Asymmetric Bento) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+<!-- Project 01: Atelier Studio -->
+<article class="group rounded-2xl bg-surface-container overflow-hidden flex flex-col shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<!-- Realistic Dark Browser Frame -->
+<div class="relative bg-surface-container-high overflow-hidden">
+<div class="h-8 px-4 flex items-center justify-between bg-surface-container-highest/80">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]/70"></span>
+</div>
+<span class="text-[10px] font-mono text-on-surface-variant">atelier-studio.design</span>
+<span class="text-[10px] font-mono text-primary-container">2024</span>
+</div>
+<div class="h-64 sm:h-72 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" data-alt="Editorial website showcase for Atelier Studio, minimalist creative agency portfolio interface with architectural monochrome imagery and bold Swiss typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB1l736vR7qEaOWaeNNbmDpRB4uHzrNu2J5hyifU43Iy3eKnmhMpBRzeWago75801HIaU3NtUl5m31jHSB9OsuY_zL8HeD8B-yu4Z_W3ql4E3PNnxje_EBAWTo3VBtjfQHbERBAZPoO9lMQ9nqgLqsTzEuZ8X2By6g0fblF4WMIpqFS0gEEfU65wfxMJPWu3EczC-_2iik4Cp7qvCmO-OLbRSN-59db7nj4QC9zJ6Q"/>
+<div class="absolute inset-0 bg-surface/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+<!-- Card Info -->
+<div class="p-6 sm:p-7 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="text-[11px] font-mono uppercase text-on-surface-variant">Creative Agency Website</span>
+<span class="text-[11px] font-mono text-primary-container">Case Study</span>
+</div>
+<h3 class="text-[22px] font-headline-md font-semibold text-primary mb-3 group-hover:text-primary-container transition-colors">
+                Atelier Studio
+              </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+                A refined digital presence for a creative studio, combining editorial typography, immersive imagery, and smooth interactions.
+              </p>
+</div>
+<div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Web Design</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Figma</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">HTML</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">CSS</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">JavaScript</span>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[13px] font-label-md uppercase tracking-wider text-primary group-hover:text-primary-container font-medium transition-colors" href="#contact">
+<span>View Project</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project 02: Maison Living -->
+<article class="group rounded-2xl bg-surface-container overflow-hidden flex flex-col shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<!-- Realistic Dark Browser Frame -->
+<div class="relative bg-surface-container-high overflow-hidden">
+<div class="h-8 px-4 flex items-center justify-between bg-surface-container-highest/80">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]/70"></span>
+</div>
+<span class="text-[10px] font-mono text-on-surface-variant">maisonliving.co</span>
+<span class="text-[10px] font-mono text-primary-container">2024</span>
+</div>
+<div class="h-64 sm:h-72 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" data-alt="Luxury e-commerce furniture store interface Maison Living, displaying minimalist Scandinavian decor items, clean product catalog grids and refined typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAv93YWidEupo5u3_YJ9L3ZQZGNxvVYs3F3ha4zxdlo9R58L4wjg3KEzsqrv6BHfA1iZUjkYG0QkWRZhd8ebEjOBt9GLGOl0ABl7vIKLjp5WTVLlCO9MI-ez4eujiSiGxW-8TXoxcU-D5Bv4W9Yn6Zwr_kKMYizHvDzp6pnR5N2NtjHAuRr2_-jUa69hYiKp_NSPP8IQne3C9YoiyIc-vHLfXatCCrQKtNYVWu5HUM"/>
+<div class="absolute inset-0 bg-surface/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+<!-- Card Info -->
+<div class="p-6 sm:p-7 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="text-[11px] font-mono uppercase text-on-surface-variant">E-commerce Website</span>
+<span class="text-[11px] font-mono text-primary-container">Live Product</span>
+</div>
+<h3 class="text-[22px] font-headline-md font-semibold text-primary mb-3 group-hover:text-primary-container transition-colors">
+                Maison Living
+              </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+                A premium product-focused shopping experience with elegant product presentation, clean navigation, and responsive layouts.
+              </p>
+</div>
+<div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">UI Design</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Responsive Dev</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">E-commerce</span>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[13px] font-label-md uppercase tracking-wider text-primary group-hover:text-primary-container font-medium transition-colors" href="#contact">
+<span>View Project</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project 03: Nomad Escapes -->
+<article class="group rounded-2xl bg-surface-container overflow-hidden flex flex-col shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<!-- Realistic Dark Browser Frame -->
+<div class="relative bg-surface-container-high overflow-hidden">
+<div class="h-8 px-4 flex items-center justify-between bg-surface-container-highest/80">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]/70"></span>
+</div>
+<span class="text-[10px] font-mono text-on-surface-variant">nomadescapes.travel</span>
+<span class="text-[10px] font-mono text-primary-container">2023</span>
+</div>
+<div class="h-64 sm:h-72 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" data-alt="Immersive travel web design for Nomad Escapes, showcasing breathtaking landscape photography, expedition booking cards and curated journey narratives." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAakbfYWp1KMcYbzEIGO7Gi6ZUzE_kn3gK-1Uol-6kcJO-Ml-2xwAPqqmFqnQor8-uROtcXpOTBuq0jhO0zFMx50YyebrA1URbGB9yeHMPWHA_XlpzXjjRpRjLmzK7XEPdKNK8KtGL9AGXFRMxUUwD00ll3PXN1-g5ZbzZ_4ETeXjXZ4nKQLbK-WaNnqvhK3s5cWh9UA7mwcQ2UsCjfMOtLtVmO0wBeKnwLCQZrOvQ"/>
+<div class="absolute inset-0 bg-surface/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+<!-- Card Info -->
+<div class="p-6 sm:p-7 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="text-[11px] font-mono uppercase text-on-surface-variant">Travel &amp; Hospitality</span>
+<span class="text-[11px] font-mono text-primary-container">Case Study</span>
+</div>
+<h3 class="text-[22px] font-headline-md font-semibold text-primary mb-3 group-hover:text-primary-container transition-colors">
+                Nomad Escapes
+              </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+                A visually immersive travel website featuring destination storytelling, rich imagery, and intuitive browsing.
+              </p>
+</div>
+<div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Web Design</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">WordPress</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Elementor</span>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[13px] font-label-md uppercase tracking-wider text-primary group-hover:text-primary-container font-medium transition-colors" href="#contact">
+<span>View Project</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+<!-- Project 04: Forma Digital -->
+<article class="group rounded-2xl bg-surface-container overflow-hidden flex flex-col shadow-lg transition-transform duration-300 hover:-translate-y-1">
+<!-- Realistic Dark Browser Frame -->
+<div class="relative bg-surface-container-high overflow-hidden">
+<div class="h-8 px-4 flex items-center justify-between bg-surface-container-highest/80">
+<div class="flex gap-1.5">
+<span class="w-2.5 h-2.5 rounded-full bg-[#ff5f56]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#ffbd2e]/70"></span>
+<span class="w-2.5 h-2.5 rounded-full bg-[#27c93f]/70"></span>
+</div>
+<span class="text-[10px] font-mono text-on-surface-variant">formadigital.agency</span>
+<span class="text-[10px] font-mono text-primary-container">2023</span>
+</div>
+<div class="h-64 sm:h-72 w-full overflow-hidden relative">
+<img class="w-full h-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" data-alt="High tech digital agency web application interface Forma Digital, featuring dark theme charts, kinetic micro-interactions and sharp typography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAIP9vPyGH1fHBEXATd3t22euQGhUv8K1xGJs1rmzsVVGjof0jCyE3OQvhMW-aCvA1iitK90DGL4rHgQWbxcihk86wWuiUP5ThGdWZn9iQ8ekxHE98KAgemM-U7NtSeiFeJcyl_59PD9SUDODksSDtWGvr2oVspT4GMw89Qf8bjC0Wj3-riZJBgqh18PStUeaRFJVtKwjIeRgYpOYRqn1-WtVvacqY0Q6m46-eQZtY"/>
+<div class="absolute inset-0 bg-surface/20 group-hover:bg-transparent transition-colors"></div>
+</div>
+</div>
+<!-- Card Info -->
+<div class="p-6 sm:p-7 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center justify-between gap-2 mb-2">
+<span class="text-[11px] font-mono uppercase text-on-surface-variant">Digital Agency Website</span>
+<span class="text-[11px] font-mono text-primary-container">Production</span>
+</div>
+<h3 class="text-[22px] font-headline-md font-semibold text-primary mb-3 group-hover:text-primary-container transition-colors">
+                Forma Digital
+              </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+                A modern agency website built around strong typography, clear service presentation, and purposeful motion.
+              </p>
+</div>
+<div>
+<div class="flex flex-wrap gap-2 mb-6">
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Webflow</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Figma</span>
+<span class="text-[11px] px-2.5 py-1 rounded bg-surface-container-highest text-on-surface-variant font-mono">Interaction Design</span>
+</div>
+<a class="inline-flex items-center gap-1.5 text-[13px] font-label-md uppercase tracking-wider text-primary group-hover:text-primary-container font-medium transition-colors" href="#contact">
+<span>View Project</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</article>
+</div>
+<!-- Bottom Prompt Bar -->
+<div class="mt-12 p-6 rounded-2xl bg-surface-container-high/60 flex flex-col sm:flex-row items-center justify-between gap-4">
+<div class="flex items-center gap-3">
+<span class="w-2.5 h-2.5 rounded-full bg-primary-container"></span>
+<span class="text-[15px] font-body-md text-on-surface">Have a project in mind? Let’s create something great together.</span>
+</div>
+<a class="inline-flex items-center gap-2 text-[13px] font-label-md uppercase tracking-wider text-primary-container hover:text-secondary-fixed font-semibold transition-colors" href="#contact">
+<span>Start a project inquiry</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- 02. A LITTLE ABOUT ME                                    -->
+<!-- ======================================================== -->
+<section class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-16 lg:py-20" id="about">
+<div class="rounded-3xl bg-surface-container-low p-8 md:p-12 lg:p-16">
+<div class="text-[12px] text-primary-container font-mono tracking-widest uppercase mb-3">
+          02 / A LITTLE ABOUT ME
+        </div>
+<h2 class="text-[28px] sm:text-[32px] font-headline-md font-bold tracking-tight text-primary max-w-2xl mb-12">
+          Good design looks simple.<br/>Getting there takes intention.
+        </h2>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-center">
+<!-- Left: Monogram and Signature Frame -->
+<div class="lg:col-span-5 flex flex-col items-center">
+<div class="relative w-full max-w-[380px] aspect-square rounded-2xl bg-surface-container p-6 flex flex-col justify-between shadow-xl">
+<!-- Grid Matrix Accent -->
+<div class="flex justify-between items-start">
+<span class="text-[11px] font-mono text-on-surface-variant uppercase tracking-wider">Index 001 // Profile</span>
+<span class="w-2 h-2 rounded-full bg-primary-container"></span>
+</div>
+<!-- Dedicated Portrait Area -->
+<div class="relative my-auto w-40 h-40 mx-auto rounded-full overflow-hidden shadow-md">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of web designer Prosenjit Das in studio environment, monochromatic clean lighting with minimal dark backdrop and professional demeanor." src="https://lh3.googleusercontent.com/aida-public/AB6AXuASuIrg63PmvqgajO9LgTgjEA5lEev9d3xXuXMJfw1KGIB6-Vx19jwJyG1jFPgOMv-7w_1jQX9JltD32CLT3ZE9QKvgEmxMSCp3IXvS_HEb2izQj3rAKf25FRWzF-bs2Twlc5aNnT19tbUJBD51WrEmFh5KVPs4uits0LSJ2QpEjyRr8373i47ZzO3PWjFxku26Dt981oktv-TALJn3lwLJh-uadGATys8ziQ-EYdQ"/>
+<div class="absolute inset-0 bg-primary/10 mix-blend-overlay"></div>
+</div>
+<!-- Typographic Monogram Stamp -->
+<div class="flex items-end justify-between pt-4">
+<div>
+<div class="text-[18px] font-headline-md font-bold text-primary">Prosenjit Das</div>
+<div class="text-[12px] font-mono text-on-surface-variant">Designer &amp; Creative Developer</div>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center font-headline-md font-bold text-primary-container">
+                  PD
+                </div>
+</div>
+</div>
+</div>
+<!-- Right: Bio & Principles -->
+<div class="lg:col-span-7 flex flex-col gap-6">
+<p class="font-body-md text-[15px] leading-relaxed text-on-surface-variant">
+              I’m Prosenjit Das, a Web Designer &amp; Developer passionate about creating thoughtful digital experiences. My work combines visual design, responsive development, and modern website-building tools to turn ideas into polished, user-friendly websites.
+            </p>
+<p class="font-body-md text-[15px] leading-relaxed text-on-surface-variant">
+              From designing interfaces in Figma to building websites with HTML, CSS, JavaScript, Bootstrap, Tailwind CSS, WordPress, and Elementor, I focus on creating experiences that look great and work smoothly across devices.
+            </p>
+<!-- 3 Compact Value Cards -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+<div class="p-3.5 rounded-xl bg-surface-container flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">draw</span>
+<span class="text-[12px] font-mono uppercase font-semibold">Purpose</span>
+</div>
+<span class="text-[13px] text-on-surface font-medium">Design with intention</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">code</span>
+<span class="text-[12px] font-mono uppercase font-semibold">Precision</span>
+</div>
+<span class="text-[13px] text-on-surface font-medium">Build with clean code</span>
+</div>
+<div class="p-3.5 rounded-xl bg-surface-container flex flex-col gap-1">
+<div class="flex items-center gap-1.5 text-primary-container">
+<span class="material-symbols-outlined text-[16px]">filter_center_focus</span>
+<span class="text-[12px] font-mono uppercase font-semibold">Details</span>
+</div>
+<span class="text-[13px] text-on-surface font-medium">Focus on the nuances</span>
+</div>
+</div>
+<!-- CTA Link -->
+<div class="pt-2">
+<a class="inline-flex items-center gap-2 text-[14px] font-label-md uppercase tracking-wider text-primary font-semibold hover:text-primary-container transition-colors group" href="#contact">
+<span>Let’s Work Together</span>
+<span class="material-symbols-outlined text-[16px] transition-transform group-hover:translate-x-1">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- 03. SERVICES                                             -->
+<!-- ======================================================== -->
+<section class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-16 lg:py-20" id="services">
+<div class="flex flex-col gap-2 mb-12">
+<div class="text-[12px] text-primary-container font-mono tracking-widest uppercase">
+          03 / SERVICES
+        </div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4">
+<h2 class="text-[28px] sm:text-[32px] font-headline-md font-bold tracking-tight text-primary">
+            From first idea to final experience.
+          </h2>
+<p class="font-body-md text-[15px] text-on-surface-variant max-w-md">
+            Specialized solutions structured to meet real business needs with speed and craftsmanship.
+          </p>
+</div>
+</div>
+<!-- 4 Refined Service Cards (2x2 Grid) -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<!-- Service 01 -->
+<div class="group p-8 rounded-2xl bg-surface-container flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">layers</span>
+</div>
+<span class="text-[11px] font-mono text-on-surface-variant">01</span>
+</div>
+<h3 class="text-[20px] font-headline-md font-medium text-primary mb-3 group-hover:text-primary-container transition-colors">
+              Website Design
+            </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+              Clean, modern, user-focused website designs with strong visual hierarchy and a consistent design system.
+            </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Website UI design</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Landing page design</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Figma layouts</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Visual direction</span>
+</div>
+</div>
+<!-- Service 02 -->
+<div class="group p-8 rounded-2xl bg-surface-container flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">terminal</span>
+</div>
+<span class="text-[11px] font-mono text-on-surface-variant">02</span>
+</div>
+<h3 class="text-[20px] font-headline-md font-medium text-primary mb-3 group-hover:text-primary-container transition-colors">
+              Frontend Development
+            </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+              Responsive, carefully structured websites with polished layouts, reliable interactions, and cross-device consistency.
+            </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">HTML and CSS</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">JavaScript &amp; jQuery</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Bootstrap</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Tailwind CSS</span>
+</div>
+</div>
+<!-- Service 03 -->
+<div class="group p-8 rounded-2xl bg-surface-container flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">web</span>
+</div>
+<span class="text-[11px] font-mono text-on-surface-variant">03</span>
+</div>
+<h3 class="text-[20px] font-headline-md font-medium text-primary mb-3 group-hover:text-primary-container transition-colors">
+              CMS &amp; No-Code Websites
+            </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+              Flexible, manageable websites built with popular CMS and visual website-building platforms.
+            </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">WordPress</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Elementor</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Webflow</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Wix</span>
+</div>
+</div>
+<!-- Service 04 -->
+<div class="group p-8 rounded-2xl bg-surface-container flex flex-col justify-between shadow-sm hover:shadow-xl transition-all duration-300">
+<div>
+<div class="flex items-center justify-between mb-6">
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container group-hover:bg-primary-container group-hover:text-on-primary-container transition-colors">
+<span class="material-symbols-outlined text-[20px]">auto_fix_high</span>
+</div>
+<span class="text-[11px] font-mono text-on-surface-variant">04</span>
+</div>
+<h3 class="text-[20px] font-headline-md font-medium text-primary mb-3 group-hover:text-primary-container transition-colors">
+              Website Refinement
+            </h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant mb-6">
+              Improve an existing website through responsive fixes, visual polish, interaction improvements, and layout refinement.
+            </p>
+</div>
+<div class="flex flex-wrap gap-2 pt-4">
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Responsive corrections</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">UI improvements</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Animations</span>
+<span class="text-[11px] font-mono px-3 py-1 rounded bg-surface-container-highest text-on-surface-variant">Layout &amp; spacing</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- 04. TOOLS & TECHNOLOGIES                                 -->
+<!-- ======================================================== -->
+<section class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-16 lg:py-20" id="skills">
+<div class="p-8 md:p-12 rounded-3xl bg-surface-container-lowest">
+<div class="text-[12px] text-primary-container font-mono tracking-widest uppercase mb-3">
+          04 / TOOLS &amp; TECHNOLOGIES
+        </div>
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+<h2 class="text-[28px] sm:text-[32px] font-headline-md font-bold tracking-tight text-primary">
+            The tools behind the experience.
+          </h2>
+<p class="font-body-md text-[14px] text-on-surface-variant max-w-md">
+            I choose the right tools for the project, balancing visual quality, responsiveness, maintainability, and ease of use.
+          </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Category 1: Frontend Development -->
+<div class="p-6 rounded-2xl bg-surface-container flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">code</span>
+<h3 class="text-[16px] font-headline-md font-semibold text-primary">Frontend Development</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">HTML5</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">CSS3 / SASS</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">JavaScript (ES6+)</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Tailwind CSS</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Bootstrap 5</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">jQuery</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Git &amp; GitHub</span>
+</div>
+</div>
+<!-- Category 2: Design Tools -->
+<div class="p-6 rounded-2xl bg-surface-container flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">palette</span>
+<h3 class="text-[16px] font-headline-md font-semibold text-primary">Design Tools</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Figma</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Design Systems</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Wireframing</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Interactive Prototypes</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Typography Systems</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Micro-interactions</span>
+</div>
+</div>
+<!-- Category 3: CMS & Platforms -->
+<div class="p-6 rounded-2xl bg-surface-container flex flex-col gap-4">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px] text-primary-container">dashboard</span>
+<h3 class="text-[16px] font-headline-md font-semibold text-primary">CMS &amp; Platforms</h3>
+</div>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">WordPress</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Elementor Pro</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Webflow</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Wix Studio</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">Responsive Testing</span>
+<span class="px-3 py-1.5 rounded-lg bg-surface-container-high text-[12px] font-mono text-on-surface hover:text-primary-container transition-colors">SEO Optimization</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- 05. THE PROCESS                                          -->
+<!-- ======================================================== -->
+<section class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-16 lg:py-20">
+<div class="text-[12px] text-primary-container font-mono tracking-widest uppercase mb-3">
+        05 / THE PROCESS
+      </div>
+<h2 class="text-[28px] sm:text-[32px] font-headline-md font-bold tracking-tight text-primary mb-12">
+        Clear thinking. Thoughtful execution.
+      </h2>
+<!-- 4-step Timeline -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Step 01 -->
+<div class="p-6 rounded-2xl bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[12px] font-mono text-primary-container font-semibold">STEP 01</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">search</span>
+</div>
+<h3 class="text-[18px] font-headline-md font-semibold text-primary mb-2">Discover</h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant">
+              Understanding your project goals, audience, brand essence, and functional requirements before opening any canvas.
+            </p>
+</div>
+<div class="mt-6 pt-3 text-[11px] font-mono text-on-surface-variant">
+            Discovery calls • Scope definition
+          </div>
+</div>
+<!-- Step 02 -->
+<div class="p-6 rounded-2xl bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[12px] font-mono text-primary-container font-semibold">STEP 02</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">brush</span>
+</div>
+<h3 class="text-[18px] font-headline-md font-semibold text-primary mb-2">Design</h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant">
+              Translating concepts into structured wireframes and refined high-fidelity UI mockups in Figma with interactive feedback.
+            </p>
+</div>
+<div class="mt-6 pt-3 text-[11px] font-mono text-on-surface-variant">
+            Figma wireframes • Visual direction
+          </div>
+</div>
+<!-- Step 03 -->
+<div class="p-6 rounded-2xl bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[12px] font-mono text-primary-container font-semibold">STEP 03</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">code_blocks</span>
+</div>
+<h3 class="text-[18px] font-headline-md font-semibold text-primary mb-2">Build</h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant">
+              Transforming approved designs into clean, responsive, semantic code or robust CMS integrations optimized for all screen sizes.
+            </p>
+</div>
+<div class="mt-6 pt-3 text-[11px] font-mono text-on-surface-variant">
+            Frontend coding • CMS configuration
+          </div>
+</div>
+<!-- Step 04 -->
+<div class="p-6 rounded-2xl bg-surface-container flex flex-col justify-between">
+<div>
+<div class="flex items-center justify-between mb-4">
+<span class="text-[12px] font-mono text-primary-container font-semibold">STEP 04</span>
+<span class="material-symbols-outlined text-[18px] text-on-surface-variant">verified</span>
+</div>
+<h3 class="text-[18px] font-headline-md font-semibold text-primary mb-2">Refine &amp; Deliver</h3>
+<p class="text-[14px] leading-relaxed text-on-surface-variant">
+              Fine-tuning animations, testing cross-browser responsiveness, optimizing assets, and ensuring a seamless launch.
+            </p>
+</div>
+<div class="mt-6 pt-3 text-[11px] font-mono text-on-surface-variant">
+            QA testing • Final handover
+          </div>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- RESUME CALLOUT BANNER                                    -->
+<!-- ======================================================== -->
+<section class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-6">
+<div class="p-8 md:p-10 rounded-2xl bg-gradient-to-r from-surface-container via-surface-container-high to-surface-container flex flex-col md:flex-row items-center justify-between gap-6 shadow-xl">
+<div class="flex flex-col gap-1 text-center md:text-left">
+<span class="text-[11px] font-mono uppercase tracking-wider text-primary-container">CURRICULUM VITAE</span>
+<h3 class="text-[22px] sm:text-[24px] font-headline-md font-semibold text-primary">
+            Want to know more about my work?
+          </h3>
+<p class="text-[14px] text-on-surface-variant">
+            Explore my background, technical toolkit, and professional experience in detail.
+          </p>
+</div>
+<div class="flex flex-wrap items-center gap-3">
+<a class="inline-flex items-center gap-2 h-11 px-5 rounded-full bg-primary-container text-on-primary-container text-[14px] font-medium uppercase tracking-wider hover:bg-secondary-fixed transition-all" href="#contact">
+<span class="material-symbols-outlined text-[16px]">description</span>
+<span>Download Resume</span>
+</a>
+<a class="inline-flex items-center gap-2 h-11 px-5 rounded-full bg-surface-container-highest text-on-surface text-[14px] font-medium uppercase tracking-wider hover:bg-surface-variant transition-all" href="#contact">
+<span>Discuss a Project</span>
+</a>
+</div>
+</div>
+</section>
+<!-- ======================================================== -->
+<!-- 06. LET'S CONNECT (CONTACT FORM)                         -->
+<!-- ======================================================== -->
+<section class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-16 lg:py-20" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-gutter-desktop items-start">
+<!-- Left: Inquiry Meta & Channels -->
+<div class="lg:col-span-5 flex flex-col">
+<div class="text-[12px] text-primary-container font-mono tracking-widest uppercase mb-3">
+            06 / LET’S CONNECT
+          </div>
+<h2 class="text-[28px] sm:text-[34px] font-headline-md font-bold tracking-tight text-primary leading-tight mb-4">
+            Have a good idea?<br/>Let’s make it happen.
+          </h2>
+<p class="text-[15px] leading-relaxed text-on-surface-variant mb-8">
+            Tell me a little about your project. Whether you need a new website, a redesign, or help improving an existing one, I’d love to hear about it.
+          </p>
+<!-- Direct Channels -->
+<div class="flex flex-col gap-4 mb-8">
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">mail</span>
+</div>
+<div>
+<span class="text-[11px] font-mono text-on-surface-variant uppercase block">Email directly</span>
+<a class="text-[14px] font-medium text-primary hover:text-primary-container transition-colors" href="mailto:hello@prosenjitdas.design">
+                  hello@prosenjitdas.design
+                </a>
+</div>
+</div>
+<div class="flex items-center gap-3 p-3.5 rounded-xl bg-surface-container">
+<div class="w-9 h-9 rounded-lg bg-surface-container-high flex items-center justify-center text-primary-container">
+<span class="material-symbols-outlined text-[18px]">pin_drop</span>
+</div>
+<div>
+<span class="text-[11px] font-mono text-on-surface-variant uppercase block">Current Location</span>
+<span class="text-[14px] font-medium text-primary">West Bengal, India (UTC +05:30)</span>
+</div>
+</div>
+</div>
+<!-- Freelance Hire CTA Box -->
+<div class="p-6 rounded-2xl bg-surface-container-lowest flex flex-col gap-2">
+<span class="text-[11px] font-mono text-primary-container uppercase font-semibold">FREELANCE AVAILABILITY</span>
+<p class="text-[14px] text-on-surface">Looking for a designer and developer for your next project?</p>
+<span class="text-[12px] text-on-surface-variant">Typically responds within 24 business hours.</span>
+</div>
+</div>
+<!-- Right: Interactive Contact Form -->
+<div class="lg:col-span-7 bg-surface-container p-8 md:p-10 rounded-3xl shadow-xl">
+<form class="flex flex-col gap-5" id="portfolio-contact-form" onsubmit="event.preventDefault(); document.getElementById('form-feedback').classList.remove('hidden'); this.reset();">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<!-- Name -->
+<div class="flex flex-col gap-2">
+<label class="text-[11px] font-mono uppercase tracking-wider text-on-surface-variant" for="name">Your Name *</label>
+<input class="h-11 px-4 rounded-lg bg-surface-container-low text-on-surface text-[14px] placeholder-on-surface-variant/40 focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="name" placeholder="e.g. Maya Chen" required="" type="text"/>
+</div>
+<!-- Email -->
+<div class="flex flex-col gap-2">
+<label class="text-[11px] font-mono uppercase tracking-wider text-on-surface-variant" for="email">Your Email *</label>
+<input class="h-11 px-4 rounded-lg bg-surface-container-low text-on-surface text-[14px] placeholder-on-surface-variant/40 focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="email" placeholder="e.g. maya@domain.com" required="" type="email"/>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+<!-- Project Type -->
+<div class="flex flex-col gap-2">
+<label class="text-[11px] font-mono uppercase tracking-wider text-on-surface-variant" for="project-type">Project Type</label>
+<select class="h-11 px-4 rounded-lg bg-surface-container-low text-on-surface text-[14px] focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="project-type">
+<option value="new-website">New Website from scratch</option>
+<option value="redesign">Website Redesign</option>
+<option value="frontend">Frontend Coding (Figma to Code)</option>
+<option value="wordpress">WordPress / CMS Development</option>
+<option value="refinement">Website Polish &amp; Refinement</option>
+</select>
+</div>
+<!-- Estimated Budget -->
+<div class="flex flex-col gap-2">
+<label class="text-[11px] font-mono uppercase tracking-wider text-on-surface-variant" for="budget">Estimated Budget (Optional)</label>
+<select class="h-11 px-4 rounded-lg bg-surface-container-low text-on-surface text-[14px] focus:outline-none focus:ring-1 focus:ring-primary-container transition-all" id="budget">
+<option value="tier-1">$1,000 – $2,500</option>
+<option value="tier-2">$2,500 – $5,000</option>
+<option value="tier-3">$5,000+</option>
+<option value="hourly">Hourly / Ongoing Retainer</option>
+</select>
+</div>
+</div>
+<!-- Message -->
+<div class="flex flex-col gap-2">
+<label class="text-[11px] font-mono uppercase tracking-wider text-on-surface-variant" for="message">Tell Me About Your Project *</label>
+<textarea class="p-4 rounded-lg bg-surface-container-low text-on-surface text-[14px] placeholder-on-surface-variant/40 focus:outline-none focus:ring-1 focus:ring-primary-container transition-all resize-none" id="message" placeholder="Describe your vision, goals, timeline, and any links to existing references..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button & Privacy Note -->
+<div class="flex flex-col sm:flex-row items-center justify-between gap-4 pt-2">
+<button class="w-full sm:w-auto inline-flex items-center justify-center gap-2 h-11 px-7 rounded-full bg-primary-container text-on-primary-container text-[14px] font-semibold uppercase tracking-wider hover:bg-secondary-fixed transition-all hover:-translate-y-0.5 shadow-md" type="submit">
+<span>Send Project Inquiry</span>
+<span class="material-symbols-outlined text-[16px]">send</span>
+</button>
+<span class="text-[11px] text-on-surface-variant text-center sm:text-right font-mono">
+                No spam. Strictly confidential.
+              </span>
+</div>
+<!-- Inline Success Confirmation -->
+<div class="hidden p-4 rounded-xl bg-primary-container/10 text-primary-container text-[13px] flex items-center gap-2" id="form-feedback">
+<span class="material-symbols-outlined text-[18px]">check_circle</span>
+<span>Thank you! Your project inquiry has been received. I will be in touch shortly.</span>
+</div>
+</form>
+</div>
+</div>
+</section>
+</div>
+</div>
+<script>
+  (function initPortfolioInteractions() {
+    // Smooth scrolling for internal anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const targetId = this.getAttribute('href');
+        if (targetId && targetId !== '#') {
+          const el = document.querySelector(targetId);
+          if (el) {
+            e.preventDefault();
+            el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        }
+      });
+    });
+
+    // Theme toggle handling connected to app shell button
+    const themeBtn = document.querySelector('button[aria-label*="theme"]');
+    if (themeBtn) {
+      themeBtn.addEventListener('click', () => {
+        document.documentElement.classList.toggle('dark');
+      });
+    }
+  })();
+</script></main><footer class="w-full bg-surface-container-lowest"><div class="max-w-[1600px] mx-auto px-margin md:px-margin-tablet lg:px-margin-desktop py-space-xl"><div class="grid grid-cols-1 md:grid-cols-12 gap-gutter-desktop items-start pb-space-lg"><div class="md:col-span-6 flex flex-col gap-space-sm"><div class="font-headline-md text-headline-md text-primary tracking-tight">Prosenjit Das<span class="text-primary-container">.</span></div><p class="font-body-md text-body-md text-on-surface-variant max-w-md">Web Designer &amp; Creative Developer specializing in architectural typography, micro-interactions, and bespoke digital experiences.</p></div><div class="md:col-span-3 flex flex-col gap-space-xs"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Connect</span><div class="flex flex-col gap-2"><a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface hover:text-primary-container transition-colors group" href="#">GitHub <span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span></a><a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface hover:text-primary-container transition-colors group" href="#">LinkedIn <span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span></a><a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface hover:text-primary-container transition-colors group" href="#">Dribbble <span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span></a><a class="inline-flex items-center gap-1 font-label-md text-label-md text-on-surface hover:text-primary-container transition-colors group" href="#">Read.cv <span class="material-symbols-outlined text-[14px] transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5">north_east</span></a></div></div><div class="md:col-span-3 flex flex-col md:items-end justify-between gap-space-md"><a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-surface-container-high text-on-surface-variant hover:text-on-surface hover:bg-surface-variant transition-colors font-label-sm text-label-sm uppercase tracking-wider" href="#home"><span class="material-symbols-outlined text-[16px]">arrow_upward</span> Back to top</a><div class="text-left md:text-right"><span class="font-label-sm text-label-sm uppercase tracking-wider text-on-surface-variant">Local Time</span><p class="font-headline-md text-headline-md text-primary">UTC+06:00</p></div></div></div><div class="pt-space-md flex flex-col sm:flex-row items-center justify-between gap-space-sm text-on-surface-variant"><p class="font-body-md text-body-md text-on-surface-variant">© 2025 Prosenjit Das. Crafted with precision &amp; care.</p><div class="flex items-center gap-6 font-label-sm text-label-sm uppercase tracking-wider"><span class="text-on-surface-variant">Portfolio Edition 3.4</span><span class="w-1 h-1 rounded-full bg-surface-variant"></span><span class="text-on-surface-variant">All Rights Reserved</span></div></div></div></footer></body></html>
